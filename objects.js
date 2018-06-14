@@ -8,11 +8,11 @@
 meals.snack = 'yogurt';
 */
 
-function updatePlaylist(obj, strArtist, strSongTitle) {
+function updatePlayList(obj, strArtist, strSongTitle) {
   return obj[strArtist]=strSongTitle;
 }
 
-function removeFromPlaylist(obj, strArtist) {
+function removeFromPlayList(obj, strArtist) {
   delete obj[strArtist];
   return obj;
 }
@@ -21,5 +21,6 @@ var playlist = {};
 playlist.Prince='1999';
 playlist['Grateful Dead']='Casey Jones';
 
+var returnString = JSON.stringify(updatePlaylist(playlist, 'Bob Dylan','Like a Rolling Stone'));
 
-console.log(updatePlaylist(playlist, 'Bob Dylan','Like a Rolling Stone'));
+console.log(returnString);
