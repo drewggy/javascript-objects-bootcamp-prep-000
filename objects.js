@@ -8,11 +8,11 @@
 meals.snack = 'yogurt';
 */
 
-var function updatePlaylist(obj, strArtist, strSongTitle) {
+function updatePlaylist(obj, strArtist, strSongTitle) {
   return obj.[strArtist]=strSongTitle;
 }
 
-var function removeFromPlaylist(obj, strArtist) {
+function removeFromPlaylist(obj, strArtist) {
   delete obj[strArtist];
 }
 
