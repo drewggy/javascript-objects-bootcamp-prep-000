@@ -13,9 +13,11 @@ var function updatePlaylist(obj, strArtist, strSongTitle) {
 }
 
 var function removeFromPlaylist(obj, strArtist) {
-  return obj.[strArtist]=strSongTitle;
+  delete obj[strArtist];
 }
 
 var playlist = {};
 playlist.Prince='1999';
 playlist.['Grateful Dead']='Casey Jones';
+
+
