@@ -11,16 +11,8 @@ meals.snack = 'yogurt';
 function updatePlaylist(obj, strArtist, strSongTitle) {
   if (obj[strArtist]){
     if(typeof obj[strArtist] === 'object') {
-      console.log("adding to array");
-      console.log(strArtist);
-      console.log(strSongTitle);
-      console.log(JSON.stringify(obj[strArtist]));
       obj[strArtist].push(strSongTitle);
-      console.log(strArtist);
-      console.log(strSongTitle);
-      console.log(JSON.stringify(obj[strArtist]));
     } else {
-      console.log("generating array");
       obj[strArtist]=[obj[strArtist], strSongTitle];
     }
   } else {
