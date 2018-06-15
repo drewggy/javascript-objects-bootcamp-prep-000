@@ -12,7 +12,7 @@ function updatePlaylist(obj, strArtist, strSongTitle) {
   if (obj[strArtist]){
     if(typeof obj[strArtist] === 'object') {
       console.log("Hi");
-      obj[strArtist].update=[strSongTitle];
+      obj[strArtist].push=[strSongTitle];
     } else {
       obj[strArtist]=[obj[strArtist], strSongTitle];
     }
