@@ -9,11 +9,16 @@ meals.snack = 'yogurt';
 */
 
 function updatePlaylist(obj, strArtist, strSongTitle) {
-  obj[strArtist]=strSongTitle;
+  if obj[strArtist]{
+    obj[strArtist]=[obj[strArtist], strSongTitle];
+  } else {
+    obj[strArtist]=strSongTitle;
+  }
   return obj;
 }
 
 function removeFromPlaylist(obj, strArtist) {
+  if obj[strArtist]
   delete obj[strArtist];
   return obj;
 }
