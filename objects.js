@@ -10,7 +10,7 @@ meals.snack = 'yogurt';
 
 function updatePlaylist(obj, strArtist, strSongTitle) {
   if (obj[strArtist]){
-    if(obj[strArtist] === 'object') {
+    if(typeof obj[strArtist] === 'object') {
       console.log("Hi");
       obj[strArtist].update=[strSongTitle];
     } else {
