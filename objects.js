@@ -23,6 +23,7 @@ playlist.Prince='1999';
 playlist['Grateful Dead']='Casey Jones';
 console.log(JSON.stringify(playlist));
 console.log(JSON.stringify(updatePlaylist(playlist, 'Bob Dylan','Like a Rolling Stone')));
+console.log(JSON.stringify(updatePlaylist(playlist, 'Bob Dylan','Lay Lady Lay')));
 console.log(JSON.stringify(playlist));
 
 console.log(JSON.stringify(removeFromPlaylist(playlist, 'Bob Dylan')));
