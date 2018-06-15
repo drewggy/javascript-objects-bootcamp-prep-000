@@ -15,7 +15,7 @@ function updatePlaylist(obj, strArtist, strSongTitle) {
       console.log(strArtist);
       console.log(strSongTitle);
       console.log(JSON.stringify(obj[strArtist]));
-      obj[strArtist].push=strSongTitle;
+      obj[strArtist].push(strSongTitle);
       console.log(strArtist);
       console.log(strSongTitle);
       console.log(JSON.stringify(obj[strArtist]));
