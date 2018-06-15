@@ -26,7 +26,7 @@ function removeFromPlaylist(obj, strArtist) {
   delete obj[strArtist];
   return obj;
 }
-console.log();("begin");
+console.log("begin");
 
 var playlist = {};
 playlist.Prince='1999';
