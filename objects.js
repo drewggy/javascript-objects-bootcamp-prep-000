@@ -18,7 +18,6 @@ function updatePlaylist(obj, strArtist, strSongTitle) {
 }
 
 function removeFromPlaylist(obj, strArtist) {
-  if obj[strArtist]
   delete obj[strArtist];
   return obj;
 }
