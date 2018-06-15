@@ -9,11 +9,11 @@ meals.snack = 'yogurt';
 */
 
 function updatePlaylist(obj, strArtist, strSongTitle) {
-//  if (obj[strArtist]){
+  if (obj[strArtist]){
     obj[strArtist]=[obj[strArtist], strSongTitle];
-//} else {
-//    obj[strArtist]=strSongTitle;
-//  }
+  } else {
+    obj[strArtist]=strSongTitle;
+  }
   return obj;
 }
 
@@ -28,6 +28,7 @@ playlist['Grateful Dead']='Casey Jones';
 console.log(JSON.stringify(playlist));
 console.log(JSON.stringify(updatePlaylist(playlist, 'Bob Dylan','Like a Rolling Stone')));
 console.log(JSON.stringify(updatePlaylist(playlist, 'Bob Dylan','Lay Lady Lay')));
+console.log(JSON.stringify(updatePlaylist(playlist, 'Bob Dylan','Just Like the Tom Thumb Blues')));
 console.log(JSON.stringify(playlist));
 
 console.log(JSON.stringify(removeFromPlaylist(playlist, 'Bob Dylan')));
