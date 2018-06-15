@@ -9,7 +9,7 @@ meals.snack = 'yogurt';
 */
 
 function updatePlaylist(obj, strArtist, strSongTitle) {
-  if obj[strArtist]{
+  if (obj[strArtist]){
     obj[strArtist]=[obj[strArtist], strSongTitle];
   } else {
     obj[strArtist]=strSongTitle;
