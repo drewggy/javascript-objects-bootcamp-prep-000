@@ -20,6 +20,7 @@ function removeFromPlayList(obj, strArtist) {
 var playlist = {};
 playlist.Prince='1999';
 playlist['Grateful Dead']='Casey Jones';
+console.log(JSON.stringify(playlist));
 console.log(JSON.stringify(updatePlayList(playlist, 'Bob Dylan','Like a Rolling Stone')));
 
 //var returnString =
