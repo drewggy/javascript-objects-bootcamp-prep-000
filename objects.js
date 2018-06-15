@@ -9,7 +9,6 @@ meals.snack = 'yogurt';
 */
 
 function updatePlaylist(obj, strArtist, strSongTitle) {
-  alert("funct begin");
   if (obj[strArtist]){
     if(obj[strArtist] === 'object') {
       alert("Hi");
@@ -27,6 +26,7 @@ function removeFromPlaylist(obj, strArtist) {
   delete obj[strArtist];
   return obj;
 }
+alert("begin");
 
 var playlist = {};
 playlist.Prince='1999';
